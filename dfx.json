@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "EtherMint_backend": {
+      "main": "src/EtherMint_backend/main.mo",
+      "type": "motoko"
+    },
+    "EtherMint_frontend": {
+      "dependencies": [
+        "EtherMint_backend"
+      ],
+      "source": [
+        "src/EtherMint_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "EtherMint_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
